@@ -1,2 +1,5 @@
+before_script: 
+  - sudo apt-get update
+  - sudo apt-get install pbuilder ubuntu-dev-tools
+  - ./make-deb-init.sh
 script: ./make-deb.sh
-before_script: ./make-deb-init.sh
